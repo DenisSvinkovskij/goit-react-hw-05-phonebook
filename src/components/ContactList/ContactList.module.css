@@ -1,0 +1,63 @@
+.list {
+  margin: 0;
+  margin-top: 15px;
+  padding: 0;
+  list-style: none;
+  max-width: 500px;
+}
+.listItem {
+  padding: 5px 15px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25), 0 0px 10px rgba(0, 0, 0, 0.22);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.listItem + .listItem {
+  margin-top: 10px;
+}
+.button {
+  background-color: inherit;
+  padding: 5px;
+  border-radius: 7px;
+  outline: none;
+  border: none;
+  box-shadow: 0 0px 6px rgba(0, 0, 0, 0.25), 0 0px 10px rgba(0, 0, 0, 0.22);
+}
+.button:hover,
+.button:focus {
+  box-shadow: 0 0px 6px rgb(81, 188, 255), 0 0px 10px rgba(0, 0, 0, 0.22);
+}
+.button:active {
+  background-color: #a0def9;
+}
+
+.appear {
+  transform: translateX(-100%);
+  opacity: 0.1;
+}
+.appearActive {
+  transform: translateX(0);
+  opacity: 1;
+  transition: all 250ms ease-in;
+}
+
+.enter {
+  transform: translateX(-100%);
+  opacity: 0.1;
+}
+.enterActive {
+  transform: translateX(0);
+  opacity: 1;
+  transition: all 250ms ease-in;
+}
+
+.exit {
+  transform: translateX(0);
+  opacity: 1;
+}
+.exitActive {
+  transform: translateX(-100%);
+  opacity: 0.1;
+  transition: all 250ms ease-in;
+}
